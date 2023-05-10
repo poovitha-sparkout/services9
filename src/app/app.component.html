@@ -1,0 +1,26 @@
+<form [formGroup]="form">
+    <div *ngFor="let post of posts">
+    
+      <input type="text" formControlName="title" [value]="post.title" />
+      <tr>{{post.id}}
+    </tr>
+      <textarea formControlName="body">{{post.id}}</textarea>
+    </div>
+  </form>
+  
+ <p>my name is {{ name }} </p>
+ <h1> your age {{ age }}</h1>
+
+   <!-- string interpolation -->
+<h1> good {{ valuechange()  }}</h1>
+<h1>{{text}}</h1>
+
+  <!-- property binding -->
+<button class="btn btn-success" (click)="valuechange()">click me </button>
+<!-- <lable for="">Search<input type="text" [value]="searchvalue"></lable> -->
+
+   <!-- event binding-means to click change -->
+<button class="btn btn-primary" (click)="changename()">click to change</button>
+<p>{{ names }}</p>
+
+   
